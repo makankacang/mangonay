@@ -13,26 +13,25 @@
 
       <div class="row mt-3">
         <div class="col">
-          <div class="input-group mb-3">
-            
-            <input
-              v-model="search"
-              type="text"
-              class="form-control"
-              placeholder="Cari Makanan Kesukaan Anda .."
-              aria-label="Cari"
-              aria-describedby="basic-addon1"
-              @keyup="searchFood"
-            />
-
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">
-                <b-icon-search></b-icon-search>
-              </span>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white border-right-0" id="basic-addon1">
+                        <b-icon-search></b-icon-search>
+                    </span>
+                </div>
+                <input
+                    v-model="search"
+                    type="text"
+                    class="form-control py-2 border-left-0 border"
+                    placeholder="Cari Makanan Kesukaan Anda .."
+                    aria-label="Cari"
+                    aria-describedby="basic-addon1"
+                    @keyup="searchFood"
+                />
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+    
 
       <div class="row mb-4">
         <div class="col-md-4 mt-4" v-for="product in products" :key="product.id">

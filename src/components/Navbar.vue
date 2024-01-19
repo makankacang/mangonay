@@ -23,9 +23,16 @@
                 Keranjang
                 <b-icon-bag></b-icon-bag>
                 <span
-                  class="badge badge-success ml-2"
+                  class="badge badge-danger ml-2"
                 >{{ updateKeranjang ? updateKeranjang.length : jumlah_pesanans.length }}</span>
               </router-link>
+            </li>
+            <li class="nav-item">
+              <div class="col">
+                <router-link to="/foods" class="btn btn-success float-right">
+                Login/Register
+                </router-link>
+              </div>
             </li>
           </b-navbar-nav>
         </b-collapse>
